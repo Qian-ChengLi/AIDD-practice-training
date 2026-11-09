@@ -1,0 +1,22 @@
+Target,Year,Uniprot,ProteinName,Resolution,pIC50,Unit,Molecule ID,pose_rank,num_torsions,energy,rmsd,pred_pIC50,pred_pose
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,0,9,-2385.759096077143,1.00027,8.0859375,0.9242787
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,1,9,-2300.663435013465,2.71514,7.8203125,0.81331253
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,2,9,-2179.322333882769,1.8667,7.7070312,0.88483775
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,3,9,-2177.039201331964,1.40846,7.7421875,0.8454327
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,4,9,-2083.437251956956,4.11976,7.5234375,0.43923616
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,5,9,-1710.1758671569253,2.07838,8.078125,0.9064877
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,6,9,-1939.9873440254205,1.74915,7.9179688,0.8727817
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,7,9,-1362.8399280265264,2.16433,7.8828125,0.64790964
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,8,9,-2024.5279960067728,2.13627,7.8320312,0.7678639
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,9,9,-2053.3178493953747,1.84582,7.9492188,0.8889517
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,10,9,-1290.2345546071,2.70318,7.4765625,0.34831256
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,11,9,-2295.99416358862,1.12057,7.8710938,0.9334308
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,12,9,-2303.0436803511857,0.694319,7.953125,0.94468933
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,13,9,-1188.9732383955766,5.44178,6.96875,0.059866417
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,14,9,-1081.8481764437988,4.85176,6.9882812,0.16803622
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,15,9,-2309.360658128315,0.950413,7.9414062,0.9180404
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,16,9,-2020.9911389857737,1.07077,7.9414062,0.7689067
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,17,9,-1029.800424754901,5.09811,7.9257812,0.5038509
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,18,9,-1399.3171011820211,1.89116,7.984375,0.7895584
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,19,9,70.06224425676986,6.29984,3.9101562,0.00030061635
+3poz,2011,P00533,Epidermal growth factor receptor,1.5,9.0,IC50=1nM; HotSpot; 120min; unknown origin,03P,20,9,-2149.4633878451623,0.0,7.9648438,0.9434519

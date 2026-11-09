@@ -1,0 +1,102 @@
+﻿ :: before initialization :: generators_for_threads.size() => [ 0 ] :: 
+ :: threadlimit = [ 2147483647 ] :: 
+ :: threadmax   = [ 14 ] :: 
+ :: i => [ 0 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3870175710 ] :: 
+ :: i => [ 1 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2177654879 ] :: 
+ :: i => [ 2 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3070657105 ] :: 
+ :: i => [ 3 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3026476432 ] :: 
+ :: i => [ 4 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 184549573 ] :: 
+ :: i => [ 5 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 783450433 ] :: 
+ :: i => [ 6 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3594528900 ] :: 
+ :: i => [ 7 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3124574693 ] :: 
+ :: i => [ 8 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 1627583927 ] :: 
+ :: i => [ 9 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 1856904144 ] :: 
+ :: i => [ 10 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 71560130 ] :: 
+ :: i => [ 11 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 666676500 ] :: 
+ :: i => [ 12 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2071589135 ] :: 
+ :: i => [ 13 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2134307206 ] :: 
+INFO:__main__:
+
+ :: GUESSED pdb id => [ 3poz ] :: 
+ :: based on :: 
+('/root/student_reproduction/Interformer_student/energy_output_3poz_student/gaussian_predict/3poz_G.db',)
+
+
+INFO:__main__:
+
+ :: all pdb_id FOUND :: 
+['3poz']
+
+ :: COUNT :: [ 1 ] :: 
+
+
+INFO:__main__:::::::::::::::::::::::::::::::
+INFO:__main__: :: SDF Rank:0 <- /root/student_reproduction/Interformer_student/energy_output_3poz_student/gaussian_predict/3poz_G.db
+1 molecule converted
+ ::  after initialization :: generators_for_threads.size() => [ 14 ] :: 
+boost version is: 108300
+INFO:__main__:
+
+Traceback (most recent call last):
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 1063, in launch_tasks
+    launch_1_task_local(
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 469, in launch_1_task_local
+    reconstruct_1_ligand_given_paths(
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 663, in reconstruct_1_ligand_given_paths
+    a_pdbqt_ligand = pdbqt_ligand.PdbqtLigand.from_path_sdf_ligand(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/ligands/_pdbqt_ligand/_pdbqt_ligand.py", line 83, in from_path_sdf_ligand
+    pdbqt_ligand =  cls.from_path_pdbqt_ligand(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/ligands/_pdbqt_ligand/_pdbqt_ligand.py", line 142, in from_path_pdbqt_ligand
+    return cls(
+           ^^^^
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/ligands/_pdbqt_ligand/_pdbqt_ligand.py", line 161, in __init__
+    PdbqtAtom.from_line_pdbqt_atom(x)
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/atoms/pdbqt_atom/pdbqt_atom.py", line 40, in from_line_pdbqt_atom
+    return cls(
+           ^^^^
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/atoms/pdbqt_atom/pdbqt_atom.py", line 65, in __init__
+    assert len(self.TYPE_PDBQT) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Previously ABSPATH_DIR_OUTPUT:/root/student_reproduction/Interformer_student/energy_output_3poz_student/ligand_reconstructing path exists, remove it
+ATOM     15  *   UNL     1      15.676  34.766   8.319  0.00  0.00    +0.000   
+Traceback (most recent call last):
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 1063, in launch_tasks
+    launch_1_task_local(
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 469, in launch_1_task_local
+    reconstruct_1_ligand_given_paths(
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 663, in reconstruct_1_ligand_given_paths
+    a_pdbqt_ligand = pdbqt_ligand.PdbqtLigand.from_path_sdf_ligand(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/ligands/_pdbqt_ligand/_pdbqt_ligand.py", line 83, in from_path_sdf_ligand
+    pdbqt_ligand =  cls.from_path_pdbqt_ligand(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/ligands/_pdbqt_ligand/_pdbqt_ligand.py", line 142, in from_path_pdbqt_ligand
+    return cls(
+           ^^^^
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/ligands/_pdbqt_ligand/_pdbqt_ligand.py", line 161, in __init__
+    PdbqtAtom.from_line_pdbqt_atom(x)
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/atoms/pdbqt_atom/pdbqt_atom.py", line 40, in from_line_pdbqt_atom
+    return cls(
+           ^^^^
+  File "/root/student_reproduction/Interformer_student/docking/pdbqt_ligand/components/atoms/pdbqt_atom/pdbqt_atom.py", line 65, in __init__
+    assert len(self.TYPE_PDBQT) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 1357, in <module>
+    main()
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 1349, in main
+    handle_a_entry_by_args(pathtuples, args)
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 1123, in handle_a_entry_by_args
+    launch_tasks(
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 1076, in launch_tasks
+    with open(i_pathtuple.ABSPATH_HINT_ERROR, "a+") as file_to_append:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/root/student_reproduction/Interformer_student/energy_output_3poz_student/ligand_reconstructing/3poz_docked.sdf_error.hint'
