@@ -1,0 +1,31 @@
+﻿===== 3POZ Interformer结果总结 =====
+预测pose数量：20
+RMSD < 2 Å的pose数量：10
+20个pose成功率：50.0%
+
+===== Energy排名第一（Top-1） =====
+pose_rank：0
+RMSD：1.00027 Å
+Energy：-2385.759096
+PoseScore：0.780244
+预测pIC50：7.784180
+预测IC50：16.437 nM
+实验IC50：1.000 nM
+预测/实验倍数：16.44
+
+===== RMSD最小的预测pose =====
+pose_rank：12
+RMSD：0.69432 Å
+Energy：-2303.043680
+PoseScore：0.833171
+
+===== PoseScore最高的预测pose =====
+pose_rank：11
+PoseScore：0.880649
+RMSD：1.12057 Å
+
+===== 排名相关性（20个预测pose） =====
+RMSD与PoseScore的Spearman相关系数： -0.8962406015037594
+RMSD与Energy的Spearman相关系数： 0.7624060150375939
+
+说明：pose_rank=20是晶体参考构象，仅供比较，未纳入上述统计。

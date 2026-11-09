@@ -1,0 +1,146 @@
+﻿ :: before initialization :: generators_for_threads.size() => [ 0 ] :: 
+ :: threadlimit = [ 2147483647 ] :: 
+ :: threadmax   = [ 14 ] :: 
+ :: i => [ 0 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3331492285 ] :: 
+ :: i => [ 1 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3658550086 ] :: 
+ :: i => [ 2 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2661528729 ] :: 
+ :: i => [ 3 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3300976813 ] :: 
+ :: i => [ 4 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 1102282192 ] :: 
+ :: i => [ 5 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2980891612 ] :: 
+ :: i => [ 6 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3289307660 ] :: 
+ :: i => [ 7 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3828404091 ] :: 
+ :: i => [ 8 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2971055995 ] :: 
+ :: i => [ 9 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 1422635303 ] :: 
+ :: i => [ 10 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 764156914 ] :: 
+ :: i => [ 11 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 238094255 ] :: 
+ :: i => [ 12 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2183935894 ] :: 
+ :: i => [ 13 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 307973519 ] :: 
+INFO:__main__:
+
+ :: GUESSED pdb id => [ 3poz ] :: 
+ :: based on :: 
+('/root/student_reproduction/Interformer_student/energy_output_3poz_student_Cl_fixed/gaussian_predict/3poz_G.db',)
+
+
+INFO:__main__:
+
+ :: all pdb_id FOUND :: 
+['3poz']
+
+ :: COUNT :: [ 1 ] :: 
+
+
+INFO:__main__:::::::::::::::::::::::::::::::
+INFO:__main__: :: SDF Rank:0 <- /root/student_reproduction/Interformer_student/energy_output_3poz_student_Cl_fixed/gaussian_predict/3poz_G.db
+1 molecule converted
+ ::  after initialization :: generators_for_threads.size() => [ 14 ] :: 
+boost version is: 108300
+1 molecule converted
+boost version is: 108300
+INFO:__main__:
+
+ :: MIN [ vdw_pair ] from .pkl :: [ 3.200000047683716 ] :: 
+ :: MAX [ vdw_pair ] from .pkl :: [ 3.9000000953674316 ] :: 
+
+
+INFO:__main__:
+
+ :: final shape_pocket :: 
+ :: (might be extended based on ligand) :: 
+[20. 20. 20.]
+
+
+INFO:__main__:
+
+ :: time ELAPSED for evaluator precalculating  :: [ 32.504047870635986 ] :: 
+ :: num of ligand heavy atoms                  :: [ 38 ] :: 
+ :: the evaluated for crystal pose             :: 
+{'energy': -2149.4633878451623,
+ 'gradient': [778.3108981308171,
+              -263.2637878626299,
+              -34.64439968261246,
+              -284.03117309529523,
+              -959.6117588474535,
+              -380.63250089888385,
+              -429.49567357403663,
+              -283.8179410501828,
+              -140.86218048081432,
+              8.884347132797922,
+              29.57068487543349,
+              146.9393157416614,
+              -24.31031979645082,
+              59.35478390878248,
+              2.697865073177409],
+ 'is_valid_conformation': True}
+
+
+INFO:__main__:
+
+ :: :: _stat.csv previewed :: :: 
+     filename_input pdb_id  pose_rank  ...  intra_energy      rmsd sdf_rank
+0   3poz_docked.sdf   3poz          0  ...     28.599786  1.000270        0
+1   3poz_docked.sdf   3poz          1  ...     28.626586  2.715140        0
+2   3poz_docked.sdf   3poz          2  ...     23.788505  1.866700        0
+3   3poz_docked.sdf   3poz          3  ...     24.629031  1.408460        0
+4   3poz_docked.sdf   3poz          4  ...     50.193764  4.119760        0
+5   3poz_docked.sdf   3poz          5  ...     46.882378  2.078380        0
+6   3poz_docked.sdf   3poz          6  ...     53.082127  1.749150        0
+7   3poz_docked.sdf   3poz          7  ...     84.211006  2.164330        0
+8   3poz_docked.sdf   3poz          8  ...     25.043379  2.136270        0
+9   3poz_docked.sdf   3poz          9  ...     64.034439  1.845820        0
+10  3poz_docked.sdf   3poz         10  ...     47.013574  2.703180        0
+11  3poz_docked.sdf   3poz         11  ...     43.153793  1.120570        0
+12  3poz_docked.sdf   3poz         12  ...     55.328335  0.694319        0
+13  3poz_docked.sdf   3poz         13  ...     26.196795  5.441780        0
+14  3poz_docked.sdf   3poz         14  ...     78.903788  4.851760        0
+15  3poz_docked.sdf   3poz         15  ...     25.482534  0.950413        0
+16  3poz_docked.sdf   3poz         16  ...     86.117429  1.070770        0
+17  3poz_docked.sdf   3poz         17  ...     99.934682  5.098110        0
+18  3poz_docked.sdf   3poz         18  ...    173.303365  1.891160        0
+19  3poz_docked.sdf   3poz         19  ...    160.218116  6.299840        0
+20  3poz_docked.sdf   3poz         20  ...     55.466129  0.000000        0
+
+[21 rows x 11 columns]
+
+
+INFO:__main__:
+
+Traceback (most recent call last):
+  File "/root/student_reproduction/Interformer_student/docking/reconstruct_ligands.py", line 1069, in launch_tasks
+    assert os.path.exists(i_pathtuple.ABSPATH_HINT_ERROR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Previously ABSPATH_DIR_OUTPUT:/root/student_reproduction/Interformer_student/energy_output_3poz_student_Cl_fixed/ligand_reconstructing path exists, remove it
+ :: vdw: (409, 409, 1)
+ :: ligand_len: 38
+ :: pocket_len: 371
+ :: reference:pos:mean: [17.41742105 32.79347368 11.71021053]
+
+
+ :: SET WEIGHTS :: 
+ :: FROM :: 
+{'weight_intra': 30.0, 'weight_collision_inter': 40.0}
+
+
+ ::  TO  :: 
+{'weight_intra': 30.0, 'weight_collision_inter': 5.0}
+
+
+::::::::::
+ :: Pose-Minimization Start... vdwDistance_inter_min_expected:-1.0 ::
+
+
+ :: SET WEIGHTS :: 
+ :: FROM :: 
+{'weight_intra': 30.0, 'weight_collision_inter': 40.0}
+
+
+ ::  TO  :: 
+{'weight_intra': 30.0, 'weight_collision_inter': 0.0}
+
+
+Done
+::::::::::
+
+ :: pick [ 20 ] unique from [ 16915 ] poses :: threshold_rmsd_heavy_atoms [ 2.000000 ] :: 

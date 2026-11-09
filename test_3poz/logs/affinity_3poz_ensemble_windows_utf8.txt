@@ -1,0 +1,194 @@
+﻿/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/lightning_fabric/connector.py:563: `precision=16` is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[Parallel(n_jobs=70)]: Using backend LokyBackend with 70 concurrent workers.
+$$$$Interformer_Gnina2$$$$
+Available GPUS:1
+# Using GPUS:1
+{'model': 'Interformer', 'debug': False, 'data_path': '', 'work_path': 'examples_3poz_student/', 'split_folder': 'diffdock_splits', 'ligand_folder': 'infer/', 'pocket_path': 'pocket', 'use_mid': False, 'affinity_pre': False, 'batch_size': 20, 'worker': 8, 'n_jobs': 70, 'method': 'Gnina2', 'Code': 'Flower', 'dataset': 'sbdd', 'seed': 8888, 'clip': 5.0, 'checkpoint': './', 'gpus': 1, 'patience': 10, 'early_stop_metric': 'val_loss', 'early_stop_mode': 'min', 'num_epochs': 2000, 'main_loop': 1, 'precision': 16, 'per_target_sampler': 0, 'target_wise_sampler': 0, 'native_sampler': 0, 'filter_type': 'normal', 'use_ff_ligands': 'uff', 'neg_weight': 1.0, 'num_nodes': 1, 'num_gpus': 8, 'per_target': False, 'metric_name': ['r'], 'test_csv': ['examples_3poz_student/demo_3poz.round0.csv'], 'reload': True, 'ensemble': ['checkpoints/v0.2_affinity_model/model0', 'checkpoints/v0.2_affinity_model/model1', 'checkpoints/v0.2_affinity_model/model2', 'checkpoints/v0.2_affinity_model/model3'], 'inference': False, 'posfix': '*val_loss*', 'energy_output_folder': '', 'uff_as_ligand': False, 'vs': False, 'n_layers': 6, 'num_heads': 8, 'hidden_dim': 128, 'ffn_scale': 4, 'intput_dropout_rate': 0.0, 'dropout_rate': 0.2, 'attention_dropout_rate': 0.2, 'attention_kd': 0, 'rbf_K': 128, 'rbf_cutoff': 10.0, 'intra_encoder': True, 'inter_encoder': True, 'attention_mask': True, 'edge_output_layer': True, 'weight_decay': 0.0001, 'warmup_updates': 1000, 'peak_lr': 0.0004, 'end_lr': 1e-09, 'pose_sel_mode': True, 'energy_mode': False, 'jizhi': False, 'exp': 'Interformer_Gnina2', 'node_featurizer': <feats.gnina_types.gnina_featurizer.PLIPAtomFeaturizer object at 0x74e2b17c2840>, 'edge_featurizer': <feats.gnina_types.gnina_featurizer.PLIPEdgeFeaturizer object at 0x74e2af26d040>, 'complex_to_data': <function obabel_mol_parser at 0x74e2af424360>, 'angle_feat_size': 0, 'node_feat_size': 1, 'edge_feat_size': 1}
+****************************************************************************************************
+# Using Model <- checkpoints/v0.2_affinity_model/model0/checkpoints/general_PL_2020_round0_full-epoch=018-val_loss=0.4251.ckpt
+# [Eval] Using Affinity Reg Task.
+# [Eval] Using Pose Selection CLS task.
+"args": {'model': 'Interformer', 'debug': False, 'data_path': '/apdcephfs_qy3/share_2932069/revoli/inter/csv/general_PL_2020_round0_full.csv', 'work_path': '/apdcephfs_qy3/share_2932069/revoli/inter', 'split_folder': 'diffdock_splits', 'ligand_folder': 'ligand', 'pocket_path': 'pocket', 'use_mid': False, 'affinity_pre': True, 'batch_size': 10, 'worker': 5, 'n_jobs': 70, 'method': 'Gnina2', 'Code': 'Affinity_230', 'dataset': 'sbdd', 'seed': 8741, 'clip': 5.0, 'checkpoint': '/apdcephfs_qy3/share_2932069/revoli/inter/beta', 'gpus': 8, 'patience': 20, 'early_stop_metric': 'val_pose_selection', 'early_stop_mode': 'max', 'num_epochs': 2000, 'main_loop': 1, 'precision': 16, 'per_target_sampler': 0, 'target_wise_sampler': 0, 'native_sampler': 0, 'filter_type': 'full', 'use_ff_ligands': 'uff', 'num_ff_mols': 1, 'neg_weight': 1.0, 'num_nodes': 1, 'num_gpus': 8, 'per_target': False, 'metric_name': ['r'], 'test_csv': ['./test.csv'], 'reload': True, 'ensemble': ['checkpoint'], 'inference': False, 'posfix': '*val_loss*', 'energy_output_folder': '', 'uff_as_ligand': False, 'n_layers': 6, 'num_heads': 8, 'hidden_dim': 128, 'ffn_scale': 4, 'intput_dropout_rate': 0.0, 'dropout_rate': 0.1, 'attention_dropout_rate': 0.1, 'attention_kd': 0, 'rbf_K': 128, 'rbf_cutoff': 10.0, 'intra_encoder': True, 'inter_encoder': True, 'attention_mask': True, 'edge_output_layer': True, 'weight_decay': 1e-05, 'warmup_updates': 10000, 'peak_lr': 0.0003, 'end_lr': 1e-09, 'pose_sel_mode': True, 'energy_mode': False, 'jizhi': True, 'exp': 'Interformer_Gnina2', 'node_featurizer': <feats.gnina_types.gnina_featurizer.PLIPAtomFeaturizer object at 0x74e2af26f740>, 'edge_featurizer': <feats.gnina_types.gnina_featurizer.PLIPEdgeFeaturizer object at 0x74e2af0d5f10>, 'complex_to_data': <function obabel_mol_parser at 0x74e2af424360>, 'angle_feat_size': 0, 'node_feat_size': 1, 'edge_feat_size': 1}
+$$$$Interformer_Gnina2$$$$
+Number of parameters = 3,554,966
+# csv <-- examples_3poz_student/demo_3poz.round0.csv
+[Bindingdata] Dataloader:lmdb
+[Bindingdata] preprocess for affinity mode.
+# [Dataset] Cached file not exists:examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-
+[Bindingdata] Making complex data 21, Method:Gnina2
+Loading Pocket...
+[Parallel(n_jobs=70)]: Using backend LokyBackend with 70 concurrent workers.
+[Parallel(n_jobs=70)]: Done  14 out of  21 | elapsed:    3.3s remaining:    1.6s
+[Parallel(n_jobs=70)]: Done  21 out of  21 | elapsed:    3.5s finished
+[Parallel(n_jobs=70)]: Using backend LokyBackend with 70 concurrent workers.
+[Parallel(n_jobs=70)]: Done  14 out of  21 | elapsed:    5.9s remaining:    3.0s
+[Parallel(n_jobs=70)]: Done  21 out of  21 | elapsed:    6.5s finished
+[Parallel(n_jobs=70)]: Using backend LokyBackend with 70 concurrent workers.
+[Parallel(n_jobs=70)]: Done  14 out of  21 | elapsed:    5.7s remaining:    2.9s
+[Parallel(n_jobs=70)]: Done  21 out of  21 | elapsed:    6.1s finished
+You are using a CUDA device ('NVIDIA GeForce RTX 4090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[Bindingdata] Pocket count:1/1
+====================================================================================================
+[Bindingdata] Loading Ligands SDF...<-infer/
+# [Bindingdata] using pose_rank to select mol from sdfs.
+[Bindingdata] Loaded num of ligands: 21/21
+====================================================================================================
+[Bindingdata] Merging Pocket->Sdf, calculating PLIP.
+[Bindingdata] Finished Merging Pocket+Ligand, 21/21
+====================================================================================================
+[Bindingdata] Using FF ligands now..->examples_3poz_student//uff
+[Bindingdata] finished loading UFF.
+====================================================================================================
+
+@ [Bindingdata] Valid Samples:21 / 21
+@ Data Size=21, ligand_len:max=38,mean=38.000000,median=38.000000,std=0.000000,min=38, pocket_len:max=230,mean=230.000000,median=230.000000,std=0.000000,min=230, complex_len:max=268,mean=268.000000,median=268.000000,std=0.000000,min=268
+@LMDB Loading <-examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-
+# [Lmdb] Geting Sampler Info <- examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-.csv
+# [Lmdb] Finished Loading Sampler Info.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[Bindingdata] Total Samples:21
+
+Predicting: |                                                                 | 0/? [00:00<?, ?it/s]
+Predicting:   0%|                                                             | 0/2 [00:00<?, ?it/s]
+Predicting DataLoader 0:   0%|                                                | 0/2 [00:00<?, ?it/s]
+Predicting DataLoader 0:  50%|████████████████████                    | 1/2 [00:00<00:00,  1.02it/s]
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 2/2 [00:01<00:00,  1.91it/s]
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 2/2 [00:01<00:00,  1.91it/s]/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/torchmetrics/utilities/prints.py:43: UserWarning: The variance of predictions or target is close to zero. This can cause instability in Pearson correlationcoefficient, leading to wrong results. Consider re-scaling the input if possible or computing using alarger dtype (currently using torch.float32).
+  warnings.warn(*args, **kwargs)  # noqa: B028
+/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/lightning_fabric/connector.py:563: `precision=16` is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# Using Model <- checkpoints/v0.2_affinity_model/model1/checkpoints/general_PL_2020_round0_full-epoch=022-val_loss=0.3940.ckpt
+# [Eval] Using Affinity Reg Task.
+# [Eval] Using Pose Selection CLS task.
+"args": {'model': 'Interformer', 'debug': False, 'data_path': '/apdcephfs_qy3/share_2932069/revoli/inter/csv/general_PL_2020_round0_full.csv', 'work_path': '/apdcephfs_qy3/share_2932069/revoli/inter', 'split_folder': 'diffdock_splits', 'ligand_folder': 'ligand', 'pocket_path': 'pocket', 'use_mid': False, 'affinity_pre': True, 'batch_size': 10, 'worker': 5, 'n_jobs': 70, 'method': 'Gnina2', 'Code': 'Affinity_230', 'dataset': 'sbdd', 'seed': 1711, 'clip': 5.0, 'checkpoint': '/apdcephfs_qy3/share_2932069/revoli/inter/beta', 'gpus': 8, 'patience': 20, 'early_stop_metric': 'val_pose_selection', 'early_stop_mode': 'max', 'num_epochs': 2000, 'main_loop': 1, 'precision': 16, 'per_target_sampler': 0, 'target_wise_sampler': 0, 'native_sampler': 0, 'filter_type': 'full', 'use_ff_ligands': 'uff', 'num_ff_mols': 1, 'neg_weight': 1.0, 'num_nodes': 1, 'num_gpus': 8, 'per_target': False, 'metric_name': ['r'], 'test_csv': ['./test.csv'], 'reload': True, 'ensemble': ['checkpoint'], 'inference': False, 'posfix': '*val_loss*', 'energy_output_folder': '', 'uff_as_ligand': False, 'n_layers': 6, 'num_heads': 8, 'hidden_dim': 128, 'ffn_scale': 4, 'intput_dropout_rate': 0.0, 'dropout_rate': 0.1, 'attention_dropout_rate': 0.2, 'attention_kd': 0, 'rbf_K': 128, 'rbf_cutoff': 10.0, 'intra_encoder': True, 'inter_encoder': True, 'attention_mask': True, 'edge_output_layer': True, 'weight_decay': 1e-05, 'warmup_updates': 10000, 'peak_lr': 0.0004, 'end_lr': 1e-09, 'pose_sel_mode': True, 'energy_mode': False, 'jizhi': True, 'exp': 'Interformer_Gnina2', 'node_featurizer': <feats.gnina_types.gnina_featurizer.PLIPAtomFeaturizer object at 0x74e2ba3e96d0>, 'edge_featurizer': <feats.gnina_types.gnina_featurizer.PLIPEdgeFeaturizer object at 0x74e2b7e371a0>, 'complex_to_data': <function obabel_mol_parser at 0x74e2af424360>, 'angle_feat_size': 0, 'node_feat_size': 1, 'edge_feat_size': 1}
+$$$$Interformer_Gnina2$$$$
+Number of parameters = 3,554,966
+# csv <-- examples_3poz_student/demo_3poz.round0.csv
+[Bindingdata] Dataloader:lmdb
+[Bindingdata] preprocess for affinity mode.
+[Dataset] Loading previously saved cached file. <-- examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-
+@LMDB Loading <-examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-
+# [Lmdb] Geting Sampler Info <- examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-.csv
+# [Lmdb] Finished Loading Sampler Info.
+[Bindingdata] Total Samples:21
+
+Predicting: |                                                                 | 0/? [00:00<?, ?it/s]
+Predicting:   0%|                                                             | 0/2 [00:00<?, ?it/s]
+Predicting DataLoader 0:   0%|                                                | 0/2 [00:00<?, ?it/s]
+Predicting DataLoader 0:  50%|████████████████████                    | 1/2 [00:00<00:00,  1.52it/s]
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 2/2 [00:00<00:00,  2.85it/s]
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 2/2 [00:00<00:00,  2.84it/s]/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/torchmetrics/utilities/prints.py:43: UserWarning: The variance of predictions or target is close to zero. This can cause instability in Pearson correlationcoefficient, leading to wrong results. Consider re-scaling the input if possible or computing using alarger dtype (currently using torch.float32).
+  warnings.warn(*args, **kwargs)  # noqa: B028
+/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/lightning_fabric/connector.py:563: `precision=16` is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# Using Model <- checkpoints/v0.2_affinity_model/model2/checkpoints/general_PL_2020_round0_full-epoch=031-val_loss=0.3979.ckpt
+# [Eval] Using Affinity Reg Task.
+# [Eval] Using Pose Selection CLS task.
+"args": {'model': 'Interformer', 'debug': False, 'data_path': '/apdcephfs_qy3/share_2932069/revoli/inter/csv/general_PL_2020_round0_full.csv', 'work_path': '/apdcephfs_qy3/share_2932069/revoli/inter', 'split_folder': 'diffdock_splits', 'ligand_folder': 'ligand', 'pocket_path': 'pocket', 'use_mid': False, 'affinity_pre': True, 'batch_size': 10, 'worker': 5, 'n_jobs': 70, 'method': 'Gnina2', 'Code': 'Affinity_230', 'dataset': 'sbdd', 'seed': 8531, 'clip': 5.0, 'checkpoint': '/apdcephfs_qy3/share_2932069/revoli/inter/beta', 'gpus': 8, 'patience': 20, 'early_stop_metric': 'val_pose_selection', 'early_stop_mode': 'max', 'num_epochs': 2000, 'main_loop': 1, 'precision': 16, 'per_target_sampler': 0, 'target_wise_sampler': 0, 'native_sampler': 0, 'filter_type': 'full', 'use_ff_ligands': 'uff', 'num_ff_mols': 1, 'neg_weight': 1.0, 'num_nodes': 1, 'num_gpus': 8, 'per_target': False, 'metric_name': ['r'], 'test_csv': ['./test.csv'], 'reload': True, 'ensemble': ['checkpoint'], 'inference': False, 'posfix': '*val_loss*', 'energy_output_folder': '', 'uff_as_ligand': False, 'n_layers': 6, 'num_heads': 8, 'hidden_dim': 128, 'ffn_scale': 4, 'intput_dropout_rate': 0.0, 'dropout_rate': 0.1, 'attention_dropout_rate': 0.2, 'attention_kd': 0, 'rbf_K': 128, 'rbf_cutoff': 10.0, 'intra_encoder': True, 'inter_encoder': True, 'attention_mask': True, 'edge_output_layer': True, 'weight_decay': 1e-05, 'warmup_updates': 20000, 'peak_lr': 0.0007, 'end_lr': 1e-09, 'pose_sel_mode': True, 'energy_mode': False, 'jizhi': True, 'exp': 'Interformer_Gnina2', 'node_featurizer': <feats.gnina_types.gnina_featurizer.PLIPAtomFeaturizer object at 0x74e2ba3de930>, 'edge_featurizer': <feats.gnina_types.gnina_featurizer.PLIPEdgeFeaturizer object at 0x74e2ba3f55b0>, 'complex_to_data': <function obabel_mol_parser at 0x74e2af424360>, 'angle_feat_size': 0, 'node_feat_size': 1, 'edge_feat_size': 1}
+$$$$Interformer_Gnina2$$$$
+Number of parameters = 3,554,966
+# csv <-- examples_3poz_student/demo_3poz.round0.csv
+[Bindingdata] Dataloader:lmdb
+[Bindingdata] preprocess for affinity mode.
+[Dataset] Loading previously saved cached file. <-- examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-
+@LMDB Loading <-examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-
+# [Lmdb] Geting Sampler Info <- examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-.csv
+# [Lmdb] Finished Loading Sampler Info.
+[Bindingdata] Total Samples:21
+
+Predicting: |                                                                 | 0/? [00:00<?, ?it/s]
+Predicting:   0%|                                                             | 0/2 [00:00<?, ?it/s]
+Predicting DataLoader 0:   0%|                                                | 0/2 [00:00<?, ?it/s]
+Predicting DataLoader 0:  50%|████████████████████                    | 1/2 [00:00<00:00,  1.50it/s]
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 2/2 [00:00<00:00,  2.81it/s]
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 2/2 [00:00<00:00,  2.80it/s]/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/torchmetrics/utilities/prints.py:43: UserWarning: The variance of predictions or target is close to zero. This can cause instability in Pearson correlationcoefficient, leading to wrong results. Consider re-scaling the input if possible or computing using alarger dtype (currently using torch.float32).
+  warnings.warn(*args, **kwargs)  # noqa: B028
+/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/lightning_fabric/connector.py:563: `precision=16` is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# Using Model <- checkpoints/v0.2_affinity_model/model3/checkpoints/general_PL_2020_round0_full-epoch=031-val_loss=0.3937.ckpt
+# [Eval] Using Affinity Reg Task.
+# [Eval] Using Pose Selection CLS task.
+"args": {'model': 'Interformer', 'debug': False, 'data_path': '/apdcephfs_qy3/share_2932069/revoli/inter/csv/general_PL_2020_round0_full.csv', 'work_path': '/apdcephfs_qy3/share_2932069/revoli/inter', 'split_folder': 'diffdock_splits', 'ligand_folder': 'ligand', 'pocket_path': 'pocket', 'use_mid': False, 'affinity_pre': True, 'batch_size': 10, 'worker': 5, 'n_jobs': 70, 'method': 'Gnina2', 'Code': 'Affinity_230', 'dataset': 'sbdd', 'seed': 5291, 'clip': 5.0, 'checkpoint': '/apdcephfs_qy3/share_2932069/revoli/inter/beta', 'gpus': 8, 'patience': 20, 'early_stop_metric': 'val_pose_selection', 'early_stop_mode': 'max', 'num_epochs': 2000, 'main_loop': 1, 'precision': 16, 'per_target_sampler': 0, 'target_wise_sampler': 0, 'native_sampler': 0, 'filter_type': 'full', 'use_ff_ligands': 'uff', 'num_ff_mols': 1, 'neg_weight': 1.0, 'num_nodes': 1, 'num_gpus': 8, 'per_target': False, 'metric_name': ['r'], 'test_csv': ['./test.csv'], 'reload': True, 'ensemble': ['checkpoint'], 'inference': False, 'posfix': '*val_loss*', 'energy_output_folder': '', 'uff_as_ligand': False, 'n_layers': 6, 'num_heads': 8, 'hidden_dim': 128, 'ffn_scale': 4, 'intput_dropout_rate': 0.0, 'dropout_rate': 0.1, 'attention_dropout_rate': 0.1, 'attention_kd': 0, 'rbf_K': 128, 'rbf_cutoff': 10.0, 'intra_encoder': True, 'inter_encoder': True, 'attention_mask': True, 'edge_output_layer': True, 'weight_decay': 1e-05, 'warmup_updates': 16000, 'peak_lr': 0.0006, 'end_lr': 1e-09, 'pose_sel_mode': True, 'energy_mode': False, 'jizhi': True, 'exp': 'Interformer_Gnina2', 'node_featurizer': <feats.gnina_types.gnina_featurizer.PLIPAtomFeaturizer object at 0x74e2ba3e8950>, 'edge_featurizer': <feats.gnina_types.gnina_featurizer.PLIPEdgeFeaturizer object at 0x74e2ba3b55b0>, 'complex_to_data': <function obabel_mol_parser at 0x74e2af424360>, 'angle_feat_size': 0, 'node_feat_size': 1, 'edge_feat_size': 1}
+$$$$Interformer_Gnina2$$$$
+Number of parameters = 3,554,966
+# csv <-- examples_3poz_student/demo_3poz.round0.csv
+[Bindingdata] Dataloader:lmdb
+[Bindingdata] preprocess for affinity mode.
+[Dataset] Loading previously saved cached file. <-- examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-
+@LMDB Loading <-examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-
+# [Lmdb] Geting Sampler Info <- examples_3poz_student//tmp_beta/demo_3poz.round0.csv-Gnina2-normal-uff--affinity-.csv
+# [Lmdb] Finished Loading Sampler Info.
+[Bindingdata] Total Samples:21
+
+Predicting: |                                                                 | 0/? [00:00<?, ?it/s]
+Predicting:   0%|                                                             | 0/2 [00:00<?, ?it/s]
+Predicting DataLoader 0:   0%|                                                | 0/2 [00:00<?, ?it/s]
+Predicting DataLoader 0:  50%|████████████████████                    | 1/2 [00:00<00:00,  1.51it/s]
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 2/2 [00:00<00:00,  2.82it/s]
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 2/2 [00:00<00:00,  2.82it/s]/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/torchmetrics/utilities/prints.py:43: UserWarning: The variance of predictions or target is close to zero. This can cause instability in Pearson correlationcoefficient, leading to wrong results. Consider re-scaling the input if possible or computing using alarger dtype (currently using torch.float32).
+  warnings.warn(*args, **kwargs)  # noqa: B028
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+====================================================================================================
+R: 1.000000/Per-Target-R: 1.000000 <- checkpoints/v0.2_affinity_model/model0/checkpoints/general_PL_2020_round0_full-epoch=018-val_loss=0.4251.ckpt <- examples_3poz_student/demo_3poz.round0.csv
+R:-1.000000/Per-Target-R:-1.000000 <- checkpoints/v0.2_affinity_model/model1/checkpoints/general_PL_2020_round0_full-epoch=022-val_loss=0.3940.ckpt <- examples_3poz_student/demo_3poz.round0.csv
+R: 1.000000/Per-Target-R: 1.000000 <- checkpoints/v0.2_affinity_model/model2/checkpoints/general_PL_2020_round0_full-epoch=031-val_loss=0.3979.ckpt <- examples_3poz_student/demo_3poz.round0.csv
+R:-1.000000/Per-Target-R:-1.000000 <- checkpoints/v0.2_affinity_model/model3/checkpoints/general_PL_2020_round0_full-epoch=031-val_loss=0.3937.ckpt <- examples_3poz_student/demo_3poz.round0.csv
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# Selected Model index..
+checkpoints/v0.2_affinity_model/model2 -> 1.000000 -> demo_3poz:1.00
+checkpoints/v0.2_affinity_model/model0 -> 1.000000 -> demo_3poz:1.00
+checkpoints/v0.2_affinity_model/model3 -> -1.000000 -> demo_3poz:-1.00
+checkpoints/v0.2_affinity_model/model1 -> -1.000000 -> demo_3poz:-1.00
+====================================================================================================
+# Calculating Ensemble results....
+result/demo_3poz.round0_ensemble.csv
+Year             NaN
+Resolution       NaN
+pIC50            NaN
+pose_rank        NaN
+num_torsions     NaN
+energy           NaN
+rmsd             NaN
+pred_pIC50       NaN
+pred_pose        NaN
+pred_pIC50_var   NaN
+Name: pIC50, dtype: float64
+
+----------------------------------------------------------------------------------------------------
+[rank0]:[W917 12:02:13.555032731 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())

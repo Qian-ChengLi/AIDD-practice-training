@@ -1,0 +1,92 @@
+﻿ :: before initialization :: generators_for_threads.size() => [ 0 ] :: 
+ :: threadlimit = [ 2147483647 ] :: 
+ :: threadmax   = [ 14 ] :: 
+ :: i => [ 0 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2509811809 ] :: 
+ :: i => [ 1 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3848212721 ] :: 
+ :: i => [ 2 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 528207291 ] :: 
+ :: i => [ 3 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 1936005968 ] :: 
+ :: i => [ 4 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 979143954 ] :: 
+ :: i => [ 5 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3007271206 ] :: 
+ :: i => [ 6 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2907488832 ] :: 
+ :: i => [ 7 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 314950902 ] :: 
+ :: i => [ 8 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2222751394 ] :: 
+ :: i => [ 9 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 3899436933 ] :: 
+ :: i => [ 10 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 4122412805 ] :: 
+ :: i => [ 11 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 168223192 ] :: 
+ :: i => [ 12 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 2460340114 ] :: 
+ :: i => [ 13 ] :: i_seed to i_generator_for_thread (pseudo-random generator) => [ 617113706 ] :: 
+INFO:__main__:
+
+ :: GUESSED pdb id => [ 3poz ] :: 
+ :: based on :: 
+('/root/student_reproduction/Interformer_student/energy_output_3poz_student_Cl_fixed/gaussian_predict/3poz_G.db',)
+
+
+INFO:__main__: :: 3poz :: finished :: [ ligand_reconstructing/3poz_docked.sdf_stat.csv ] :: 
+INFO:__main__:
+
+
+ :: UNFINISHED :: 
+
+[]
+
+
+ :: UNFINISHED :: [:10] :: 
+
+[]
+
+
+ ::   FINISHED :: 
+
+['3poz']
+
+
+ ::   FINISHED :: [:10] :: 
+
+[{'ABSPATH_CWD': '/root/student_reproduction/Interformer_student/energy_output_3poz_student_Cl_fixed',
+  'DICT_EXTRA': {},
+  'STR_PDB_ID': '3poz'}]
+
+
+INFO:__main__:
+
+ :: DATAFRAME :: CONCATED :: 
+     filename_input pdb_id  pose_rank  ...  intra_energy      rmsd sdf_rank
+0   3poz_docked.sdf   3poz          0  ...     28.599786  1.000270        0
+1   3poz_docked.sdf   3poz          1  ...     28.626586  2.715140        0
+2   3poz_docked.sdf   3poz          2  ...     23.788505  1.866700        0
+3   3poz_docked.sdf   3poz          3  ...     24.629031  1.408460        0
+4   3poz_docked.sdf   3poz          4  ...     50.193764  4.119760        0
+5   3poz_docked.sdf   3poz          5  ...     46.882378  2.078380        0
+6   3poz_docked.sdf   3poz          6  ...     53.082127  1.749150        0
+7   3poz_docked.sdf   3poz          7  ...     84.211006  2.164330        0
+8   3poz_docked.sdf   3poz          8  ...     25.043379  2.136270        0
+9   3poz_docked.sdf   3poz          9  ...     64.034439  1.845820        0
+10  3poz_docked.sdf   3poz         10  ...     47.013574  2.703180        0
+11  3poz_docked.sdf   3poz         11  ...     43.153793  1.120570        0
+12  3poz_docked.sdf   3poz         12  ...     55.328335  0.694319        0
+13  3poz_docked.sdf   3poz         13  ...     26.196795  5.441780        0
+14  3poz_docked.sdf   3poz         14  ...     78.903788  4.851760        0
+15  3poz_docked.sdf   3poz         15  ...     25.482534  0.950413        0
+16  3poz_docked.sdf   3poz         16  ...     86.117429  1.070770        0
+17  3poz_docked.sdf   3poz         17  ...     99.934682  5.098110        0
+18  3poz_docked.sdf   3poz         18  ...    173.303365  1.891160        0
+19  3poz_docked.sdf   3poz         19  ...    160.218116  6.299840        0
+20  3poz_docked.sdf   3poz         20  ...     55.466129  0.000000        0
+
+[21 rows x 11 columns]
+
+
+INFO:__main__:
+
+ :: _concated.csv saved to :: [ /root/student_reproduction/Interformer_student/energy_output_3poz_student_Cl_fixed/ligand_reconstructing/stat_concated.csv ] :: 
+ :: Top1 :: [ 1 ]/[ 1 ] :: 
+ :: [ 1.0 ] :: 
+
+
+ ::      RMSD OK [ 1 ]
+ ::      BUST OK [ 0 ] = 0.0%
+ :: RMSD BUST OK [ 0 ]
+
+
+ ::  after initialization :: generators_for_threads.size() => [ 14 ] :: 

@@ -1,0 +1,60 @@
+﻿/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/lightning_fabric/connector.py:563: `precision=16` is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 4090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/root/miniconda3/envs/interformer_student/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'predict_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=13` in the `DataLoader` to improve performance.
+$$$$Interformer_Gnina2$$$$
+Available GPUS:1
+# Using GPUS:1
+{'model': 'Interformer', 'debug': True, 'data_path': '', 'work_path': 'examples_3poz_student/', 'split_folder': 'diffdock_splits', 'ligand_folder': 'ligand', 'pocket_path': 'pocket', 'use_mid': False, 'affinity_pre': False, 'batch_size': 1, 'worker': 8, 'n_jobs': 70, 'method': 'Gnina2', 'Code': 'Flower', 'dataset': 'sbdd', 'seed': 8888, 'clip': 5.0, 'checkpoint': './', 'gpus': 1, 'patience': 10, 'early_stop_metric': 'val_loss', 'early_stop_mode': 'min', 'num_epochs': 2000, 'main_loop': 1, 'precision': 16, 'per_target_sampler': 0, 'target_wise_sampler': 0, 'native_sampler': 0, 'filter_type': 'normal', 'use_ff_ligands': 'uff', 'neg_weight': 1.0, 'num_nodes': 1, 'num_gpus': 8, 'per_target': False, 'metric_name': ['r'], 'test_csv': ['examples_3poz_student/demo_3poz.csv'], 'reload': False, 'ensemble': ['checkpoints/v0.2_energy_model'], 'inference': False, 'posfix': '*val_loss*', 'energy_output_folder': 'energy_output_3poz_student_Cl_fixed', 'uff_as_ligand': False, 'vs': False, 'n_layers': 6, 'num_heads': 8, 'hidden_dim': 128, 'ffn_scale': 4, 'intput_dropout_rate': 0.0, 'dropout_rate': 0.2, 'attention_dropout_rate': 0.2, 'attention_kd': 0, 'rbf_K': 128, 'rbf_cutoff': 10.0, 'intra_encoder': True, 'inter_encoder': True, 'attention_mask': True, 'edge_output_layer': True, 'weight_decay': 0.0001, 'warmup_updates': 1000, 'peak_lr': 0.0004, 'end_lr': 1e-09, 'pose_sel_mode': False, 'energy_mode': False, 'jizhi': False, 'exp': 'Interformer_Gnina2', 'node_featurizer': <feats.gnina_types.gnina_featurizer.PLIPAtomFeaturizer object at 0x7ed1c6087c80>, 'edge_featurizer': <feats.gnina_types.gnina_featurizer.PLIPEdgeFeaturizer object at 0x7ed1c60a8230>, 'complex_to_data': <function obabel_mol_parser at 0x7ed1c62642c0>, 'angle_feat_size': 0, 'node_feat_size': 1, 'edge_feat_size': 1}
+****************************************************************************************************
+# Using Model <- checkpoints/v0.2_energy_model/checkpoints/general_PL_2020-epoch=085-val_loss=0.0191.ckpt
+# [Eval] Using Affinity Reg Task.
+# [Interformer] energy_output_fodler:
+"args": {'model': 'Interformer', 'debug': False, 'data_path': '/apdcephfs_qy3/share_2932069/revoli/inter/csv/general_PL_2020.csv', 'work_path': '/apdcephfs_qy3/share_2932069/revoli/inter', 'split_folder': 'diffdock_splits', 'ligand_folder': 'ligand', 'pocket_path': 'pocket', 'use_mid': False, 'batch_size': 3, 'worker': 5, 'n_jobs': 70, 'method': 'Gnina2', 'Code': 'EnergyFix', 'dataset': 'sbdd', 'seed': 7461, 'clip': 5.0, 'checkpoint': '/apdcephfs_qy3/share_2932069/revoli/inter/beta', 'gpus': 8, 'patience': 20, 'early_stop_metric': 'val_loss', 'early_stop_mode': 'min', 'num_epochs': 2000, 'main_loop': 1, 'precision': 16, 'per_target_sampler': 0, 'target_wise_sampler': 0, 'native_sampler': 0, 'filter_type': 'normal', 'use_ff_ligands': 'uff', 'num_ff_mols': 1, 'mix_loss': False, 'neg_weight': 1.0, 'num_nodes': 1, 'num_gpus': 8, 'per_target': False, 'metric_name': ['r'], 'test_csv': ['./test.csv'], 'reload': True, 'ensemble': ['checkpoint'], 'inference': False, 'posfix': '*val_loss*', 'all_poses': False, 'energy_output_folder': '', 'uff_as_ligand': False, 'n_layers': 6, 'num_heads': 8, 'hidden_dim': 128, 'ffn_scale': 4, 'intput_dropout_rate': 0.0, 'dropout_rate': 0.1, 'attention_dropout_rate': 0.1, 'attention_kd': 0, 'rbf_K': 128, 'rbf_cutoff': 10.0, 'weight_decay': 1e-05, 'warmup_updates': 11000, 'peak_lr': 0.0012, 'end_lr': 1e-09, 'pose_sel_mode': False, 'energy_mode': True, 'jizhi': True, 'exp': 'Interformer_Gnina2', 'node_featurizer': <feats.gnina_types.gnina_featurizer.PLIPAtomFeaturizer object at 0x7ed1c4140590>, 'edge_featurizer': <feats.gnina_types.gnina_featurizer.PLIPEdgeFeaturizer object at 0x7ed1c4119e50>, 'complex_to_data': <function obabel_mol_parser at 0x7ed1c62642c0>, 'angle_feat_size': 0, 'node_feat_size': 1, 'edge_feat_size': 1}
+$$$$Interformer_Gnina2$$$$
+Number of parameters = 3,621,726
+# csv <-- examples_3poz_student/demo_3poz.csv
+[Bindingdata] Dataloader:lmdb
+[Bindingdata] Making complex data 1, Method:Gnina2
+Loading Pocket...
+[Bindingdata] Pocket count:1/1
+====================================================================================================
+[Bindingdata] Loading Ligands SDF...<-ligand
+# [Bindingdata] using pose_rank to select mol from sdfs.
+[Bindingdata] Loaded num of ligands: 1/1
+====================================================================================================
+[Bindingdata] Merging Pocket->Sdf, calculating PLIP.
+[Bindingdata] Finished Merging Pocket+Ligand, 1/1
+====================================================================================================
+[Bindingdata] Using FF ligands now..->examples_3poz_student//uff
+[Bindingdata] finished loading UFF.
+====================================================================================================
+
+@ [Bindingdata] Valid Samples:1 / 1
+@ Data Size=1, ligand_len:max=38,mean=38.000000,median=38.000000,std=0.000000,min=38, pocket_len:max=371,mean=371.000000,median=371.000000,std=0.000000,min=371, complex_len:max=409,mean=409.000000,median=409.000000,std=0.000000,min=409
+# [Lmdb] Remove previous exists<-examples_3poz_student//tmp_beta/demo_3poz.csv-Gnina2-normal-uff-
+@LMDB Loading <-examples_3poz_student//tmp_beta/demo_3poz.csv-Gnina2-normal-uff-
+# [Lmdb] Geting Sampler Info <- examples_3poz_student//tmp_beta/demo_3poz.csv-Gnina2-normal-uff-.csv
+# [Lmdb] Finished Loading Sampler Info.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[Bindingdata] Total Samples:1
+
+Predicting: |                                                                 | 0/? [00:00<?, ?it/s]
+Predicting:   0%|                                                             | 0/1 [00:00<?, ?it/s]
+Predicting DataLoader 0:   0%|                                                | 0/1 [00:00<?, ?it/s][Interformer] Gussian Score ->3poz-0
+
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 1/1 [00:00<00:00,  2.42it/s]
+Predicting DataLoader 0: 100%|████████████████████████████████████████| 1/1 [00:00<00:00,  2.41it/s]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
